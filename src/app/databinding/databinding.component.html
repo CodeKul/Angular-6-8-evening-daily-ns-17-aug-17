@@ -40,3 +40,15 @@
   </div>
 </div>
 
+<div class="row" [class.jumbotron]="isJumbo">
+  <div class="col-md-12">
+    <input type="button" value="Classes" (click)="isJumbo=!isJumbo">
+  </div>
+</div>
+
+<div class="row" [style.border]="myBrd">
+  <div class="col-md-12">
+    <input type="text" [(ngModel)]="myBrd"> {{myBrd}}
+  </div>
+</div>
+
