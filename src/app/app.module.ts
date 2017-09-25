@@ -10,6 +10,7 @@ import { BannerComponent } from './banner/banner.component';
 import { MyNavComponent } from './banner/my-nav.component';
 import { JumboComponent } from './banner/jumbo.component';
 import { InfoComponent } from './banner/info.component';
+import { DatabindingComponent } from './databinding/databinding.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { InfoComponent } from './banner/info.component';
     BannerComponent,
     MyNavComponent,
     JumboComponent,
-    InfoComponent
+    InfoComponent,
+    DatabindingComponent
   ],
   imports: [
     BrowserModule

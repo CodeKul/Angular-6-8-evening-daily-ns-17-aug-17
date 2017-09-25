@@ -12,5 +12,4 @@ export class JumboComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }
