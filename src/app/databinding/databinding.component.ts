@@ -9,11 +9,16 @@ export class DatabindingComponent implements OnInit {
 
   carNm: string;
   ipTyp = 'button';
+  dt: string;
 
   constructor() {
     this.carNm = 'Mercedez';
   }
 
   ngOnInit() {
+  }
+
+  chDt() {
+    this.dt = new Date().toString();
   }
 }
