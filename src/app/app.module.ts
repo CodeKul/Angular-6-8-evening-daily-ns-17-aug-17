@@ -13,6 +13,9 @@ import { JumboComponent } from './banner/jumbo.component';
 import { InfoComponent } from './banner/info.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { CustomAttrComponent } from './databinding/custom-attr/custom-attr.component';
+import { InterComponentComponent } from './databinding/inter-component/inter-component.component';
+import { CardColorPickerComponent } from './databinding/inter-component/card-color-picker.component';
+import { CardMakerComponent } from './databinding/inter-component/card-maker.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { CustomAttrComponent } from './databinding/custom-attr/custom-attr.compo
     JumboComponent,
     InfoComponent,
     DatabindingComponent,
-    CustomAttrComponent
+    CustomAttrComponent,
+    InterComponentComponent,
+    CardColorPickerComponent,
+    CardMakerComponent
   ],
   imports: [
     BrowserModule,
