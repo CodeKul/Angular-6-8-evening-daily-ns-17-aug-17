@@ -12,6 +12,7 @@ import { MyNavComponent } from './banner/my-nav.component';
 import { JumboComponent } from './banner/jumbo.component';
 import { InfoComponent } from './banner/info.component';
 import { DatabindingComponent } from './databinding/databinding.component';
+import { CustomAttrComponent } from './databinding/custom-attr/custom-attr.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { DatabindingComponent } from './databinding/databinding.component';
     MyNavComponent,
     JumboComponent,
     InfoComponent,
-    DatabindingComponent
+    DatabindingComponent,
+    CustomAttrComponent
   ],
   imports: [
     BrowserModule,

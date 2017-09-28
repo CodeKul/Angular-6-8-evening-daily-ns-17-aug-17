@@ -35,8 +35,7 @@
 </div>
 <div class="row">
   <div class="col-md-12">
-    <input type="button" value="Date" (click)="chDt()">
-    {{dt}}
+    <input type="button" value="Date" (click)="chDt()"> {{dt}}
   </div>
 </div>
 
@@ -52,3 +51,36 @@
   </div>
 </div>
 
+<hr>
+<div class="row" [style.border]="myBrd">
+  <div class="col-md-3 card">
+    You clicked {{isCodekul}}
+  </div>
+  <div class="col-md-3 card">
+    You clicked {{isMeLayer}}
+  </div>
+  <div class="col-md-3 card">
+    You Clicked {{isApple}}
+  </div>
+</div>
+<hr>
+
+<div class="row">
+  <app-custom-attr 
+  [header]="'CodeKul'" 
+  [cardTitle]="'Custom Attributes and Events'" 
+  [cardText]="'Some quick example text to build on the card title and make up the bulk of the cards content.'"
+  (onLike)="isCodekul=$event"> </app-custom-attr>
+
+  <app-custom-attr 
+  [header]="'MeLayer'" 
+  [cardTitle]="'ChatApp'" 
+  [cardText]="'this is changed Some quick example text to build on the card title and make up the bulk of the cards content.'"
+  (onLike)="isMeLayer=$event"> </app-custom-attr>
+
+  <app-custom-attr 
+  [header]="'Apple'" 
+  [cardTitle]="'Custom Attributes and Events'" 
+  [cardText]="'Some quick example text to build on the card title and make up the bulk of the cards content.'"
+  (onLike)="isApple=$event"> </app-custom-attr>
+</div>
