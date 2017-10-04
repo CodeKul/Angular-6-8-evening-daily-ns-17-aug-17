@@ -16,6 +16,7 @@ import { CustomAttrComponent } from './databinding/custom-attr/custom-attr.compo
 import { InterComponentComponent } from './databinding/inter-component/inter-component.component';
 import { CardColorPickerComponent } from './databinding/inter-component/card-color-picker.component';
 import { CardMakerComponent } from './databinding/inter-component/card-maker.component';
+import { ContentProjectionComponent } from './content-projection/content-projection.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { CardMakerComponent } from './databinding/inter-component/card-maker.com
     CustomAttrComponent,
     InterComponentComponent,
     CardColorPickerComponent,
-    CardMakerComponent
+    CardMakerComponent,
+    ContentProjectionComponent
   ],
   imports: [
     BrowserModule,
