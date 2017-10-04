@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-md-4">
+    <input type="text" #nm>
+    <input type="button" class="btn btn-dark" value="Okay" (click)="myNm=nm.value">
+
+    <input type="button" class="btn btn-info" value="Color" (click)="changeIt(nm.value)">
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+    <div [class]="cls" role="alert">
+      <strong>codekul!</strong> {{myNm}}
+    </div>
+  </div>
+</div>
