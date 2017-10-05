@@ -1,3 +1,9 @@
 <div class="container">
-   <app-local-refs></app-local-refs>
+    <app-life-cycle [myIp]="title" *ngIf="isVs"></app-life-cycle>
+    <div class="row">
+        <div class="col-md-12">
+            <input type="button" value="Okay" class="btn btn-debug" (click)="isVs = !isVs" /> {{isVs}}
+        </div>
+    </div>
+
 </div>

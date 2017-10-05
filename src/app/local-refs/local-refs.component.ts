@@ -1,6 +1,4 @@
-import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
-
-
+import { Component, OnInit, ElementRef, ViewChild, ContentChild } from '@angular/core';
 
 @Component({
   selector: 'app-local-refs',
@@ -13,6 +11,9 @@ export class LocalRefsComponent implements OnInit {
 
   @ViewChild('nm')
   nm: ElementRef;
+
+  @ContentChild('add')
+  add: ElementRef;
 
   constructor() {
     this.cls = 'alert alert-success';

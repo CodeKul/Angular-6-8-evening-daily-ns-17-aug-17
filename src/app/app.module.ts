@@ -18,6 +18,7 @@ import { CardColorPickerComponent } from './databinding/inter-component/card-col
 import { CardMakerComponent } from './databinding/inter-component/card-maker.component';
 import { ContentProjectionComponent } from './content-projection/content-projection.component';
 import { LocalRefsComponent } from './local-refs/local-refs.component';
+import { LifeCycleComponent } from './life-cycle/life-cycle.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { LocalRefsComponent } from './local-refs/local-refs.component';
     CardColorPickerComponent,
     CardMakerComponent,
     ContentProjectionComponent,
-    LocalRefsComponent
+    LocalRefsComponent,
+    LifeCycleComponent
   ],
   imports: [
     BrowserModule,
