@@ -19,6 +19,8 @@ import { CardMakerComponent } from './databinding/inter-component/card-maker.com
 import { ContentProjectionComponent } from './content-projection/content-projection.component';
 import { LocalRefsComponent } from './local-refs/local-refs.component';
 import { LifeCycleComponent } from './life-cycle/life-cycle.component';
+import { DirectivesComponent } from './directives/directives.component';
+import { AlertDirective } from './directives/alert.directive';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { LifeCycleComponent } from './life-cycle/life-cycle.component';
     CardMakerComponent,
     ContentProjectionComponent,
     LocalRefsComponent,
-    LifeCycleComponent
+    LifeCycleComponent,
+    DirectivesComponent,
+    AlertDirective
   ],
   imports: [
     BrowserModule,

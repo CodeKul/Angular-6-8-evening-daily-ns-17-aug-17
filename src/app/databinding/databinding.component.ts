@@ -10,6 +10,12 @@ export class DatabindingComponent {
   carNm: string;
   ipTyp = 'button';
   dt: string;
+  isJumbo: boolean;
+  myBrd: string;
+  isMeLayer: boolean;
+  isApple: boolean;
+  isCodekul: boolean;
+
 
   constructor() {
     this.carNm = 'Mercedez';

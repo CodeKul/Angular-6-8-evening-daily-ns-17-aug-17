@@ -8,6 +8,7 @@ import { Component, OnInit, ElementRef, ViewChild, ContentChild } from '@angular
 export class LocalRefsComponent implements OnInit {
 
   cls: string;
+  myNm: string;
 
   @ViewChild('nm')
   nm: ElementRef;
