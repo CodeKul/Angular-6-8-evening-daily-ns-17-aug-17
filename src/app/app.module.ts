@@ -21,6 +21,8 @@ import { LocalRefsComponent } from './local-refs/local-refs.component';
 import { LifeCycleComponent } from './life-cycle/life-cycle.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { AlertDirective } from './directives/alert.directive';
+import { NavBarComponent } from './directives/nav-bar/nav-bar.component';
+import { DropdownDirective } from './directives/nav-bar/dropdown.directive';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { AlertDirective } from './directives/alert.directive';
     LocalRefsComponent,
     LifeCycleComponent,
     DirectivesComponent,
-    AlertDirective
+    AlertDirective,
+    NavBarComponent,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
