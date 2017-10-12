@@ -7,6 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DirectivesComponent implements OnInit {
 
+  mobiles = [
+    'Android',
+    'Apple',
+    'Moto',
+    'Samsung',
+    'Windows',
+    'Nokia'
+  ];
+  day = 2;
   constructor() { }
 
   ngOnInit() {

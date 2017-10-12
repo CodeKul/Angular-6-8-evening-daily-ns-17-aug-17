@@ -1,7 +1,7 @@
 <app-nav-bar></app-nav-bar>
-<div class="row"> 
+<div class="row">
   <div class="col-md-12">
-    
+
   </div>
 </div>
 <div class="row" [ngClass]="{card : true}">
@@ -15,9 +15,54 @@
   </div>
 </div>
 <div class="row">
-  <div class="col-md-12" >
+  <div class="col-md-12">
     <div appAlert role="alert">
       <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
     </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div *ngIf="isSh; else someOther"> Hello Structural directives </div>
+    <ng-template #someOther> It is else block </ng-template>
+    <input type="button" value="Okay" (click)="isSh = !isSh">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div template="ngIf isShs"> Hello Structural directives </div>
+    <input type="button" value="Okay" (click)="isShs = !isShs">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <ng-template [ngIf]="isShe"> Hello Structural directives </ng-template>
+    <input type="button" value="Okay" (click)="isShe = !isShe">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <ng-template [ngIf]="isShe"> Hello Structural directives </ng-template>
+    <input type="button" value="Okay" (click)="isShe = !isShe">
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <ul >
+      <li *ngFor="let mobile of mobiles; let i = index;" >{{mobile}}->{{i}}</li>
+    </ul>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+   <div [ngSwitch]="day">
+     <p *ngSwitchCase="1">Monday</p>
+     <p *ngSwitchCase="2">Tuesday</p>
+     <p *ngSwitchCase="3">Thursday</p>
+     <p *ngSwitchDefault>No Day</p>
+   </div>
   </div>
 </div>
