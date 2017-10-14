@@ -31,6 +31,14 @@
 
 <div class="row">
   <div class="col-md-12">
+    <div *noIf="isShN">This is Custom Structural directive </div>
+    <input type="button" value="No If" (click)="isShN = !isShN"> {{isShN}}
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-md-12">
     <div template="ngIf isShs"> Hello Structural directives </div>
     <input type="button" value="Okay" (click)="isShs = !isShs">
   </div>
@@ -51,18 +59,18 @@
 </div>
 <div class="row">
   <div class="col-md-12">
-    <ul >
-      <li *ngFor="let mobile of mobiles; let i = index;" >{{mobile}}->{{i}}</li>
+    <ul>
+      <li *ngFor="let mobile of mobiles; let i = index;">{{mobile}}->{{i}}</li>
     </ul>
   </div>
 </div>
 <div class="row">
   <div class="col-md-12">
-   <div [ngSwitch]="day">
-     <p *ngSwitchCase="1">Monday</p>
-     <p *ngSwitchCase="2">Tuesday</p>
-     <p *ngSwitchCase="3">Thursday</p>
-     <p *ngSwitchDefault>No Day</p>
-   </div>
+    <div [ngSwitch]="day">
+      <p *ngSwitchCase="1">Monday</p>
+      <p *ngSwitchCase="2">Tuesday</p>
+      <p *ngSwitchCase="3">Thursday</p>
+      <p *ngSwitchDefault>No Day</p>
+    </div>
   </div>
 </div>

@@ -23,6 +23,7 @@ import { DirectivesComponent } from './directives/directives.component';
 import { AlertDirective } from './directives/alert.directive';
 import { NavBarComponent } from './directives/nav-bar/nav-bar.component';
 import { DropdownDirective } from './directives/nav-bar/dropdown.directive';
+import { CustomStrDirective } from './directives/custom-str.directive';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { DropdownDirective } from './directives/nav-bar/dropdown.directive';
     DirectivesComponent,
     AlertDirective,
     NavBarComponent,
-    DropdownDirective
+    DropdownDirective,
+    CustomStrDirective
   ],
   imports: [
     BrowserModule,
