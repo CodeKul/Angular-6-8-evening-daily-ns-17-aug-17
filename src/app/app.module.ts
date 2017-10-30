@@ -1,3 +1,4 @@
+import { RemoteConnectionService } from './services/remote-connection.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -24,6 +25,8 @@ import { AlertDirective } from './directives/alert.directive';
 import { NavBarComponent } from './directives/nav-bar/nav-bar.component';
 import { DropdownDirective } from './directives/nav-bar/dropdown.directive';
 import { CustomStrDirective } from './directives/custom-str.directive';
+import { ServicesComponent } from './services/services.component';
+import { RecConComponent } from './services/rec-con.component';
 
 @NgModule({
   declarations: [
@@ -48,13 +51,15 @@ import { CustomStrDirective } from './directives/custom-str.directive';
     AlertDirective,
     NavBarComponent,
     DropdownDirective,
-    CustomStrDirective
+    CustomStrDirective,
+    ServicesComponent,
+    RecConComponent
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [RemoteConnectionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
